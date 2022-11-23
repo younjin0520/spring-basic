@@ -12,7 +12,13 @@ import java.util.Optional;
  * 핵심 비즈니스 로직 구현
  */
 public class MemberService {
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+
+    //회원 repository 코드가 회원 서비스 코드를 DI 가능하게 변경
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     /**
      * 회원 가입
