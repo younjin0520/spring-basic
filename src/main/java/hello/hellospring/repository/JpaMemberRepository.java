@@ -1,4 +1,4 @@
-package hello.hellospring.repository;
+/*package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
 
@@ -33,3 +33,4 @@ public class JpaMemberRepository implements MemberRepository {
         return result.stream().findAny();
     }
 }
+*/
